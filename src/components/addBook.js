@@ -61,7 +61,7 @@ const AddForm = () =>{
 
   const getPublisher = async () => {
     try{
-      const response = await fetch( process.env.API_LINK + "publisher")
+      const response = await fetch( "https://tbd-backend.vercel.app/publisher")
       const jsonData = await response.json()
       setPublisher(jsonData)
     }catch(err){
